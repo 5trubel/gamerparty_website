@@ -1,0 +1,160 @@
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    width: 200px;
+  }
+  .news{
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo{
+    width: 300px;
+  }
+}
+
+/* Button Override */
+.btn{
+  border-radius: 0 !important;
+}
+
+body{
+  background-image: linear-gradient(135deg, #6E0001, #001B6C);
+  min-height: 100vh !important;
+}
+
+.hiddenhref{
+  font-size: 20px;
+  font-family: monospace;
+  color: #fff;
+}
+.navbar {
+    min-height: 60px;
+  }
+  
+  .navbar-brand {
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  /* CLEARLY NO COPY PASTA! */
+  .navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 13px;
+    padding: 9px 10px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav > li > a {
+      /* (80px - line-height of 27px) / 2 = 26.5px */
+      padding-top: 16.5px;
+      padding-bottom: 16.5px;
+      line-height: 27px;
+    }
+  }
+
+  .typewriter h3 {
+    color: #fff;
+    font-size: 40px;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent }
+  }
+
+
+
+  /* STOLEN FROM HERE: https://webdesign.weisshart.de/marquee.php */
+  /* Custom Marquee */
+  .marquee {
+		max-width: 100vw; /* iOS braucht das */
+		white-space: nowrap;
+    overflow: hidden;
+    background-color: #060606;
+		color: white;
+	}
+
+	.marquee span {
+		display: inline-block;
+		padding-left: 100%;
+		animation: marquee 10s linear infinite;
+	}
+
+	/* Optional: mouseover (oder Tipp auf dem Touchscreen) pausiert die Laufschrift 
+	.marquee span:hover {
+		animation-play-state: paused 
+	}*/
+
+	/* Make it move */
+	@keyframes marquee {
+		0%   { transform: translateX(0); }
+		100% { transform: translateX(-100%); }
+  }
+  
+  .c_LogoRow {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .c_SticktoBottom{
+    bottom: 0vh !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hidemobile {
+      display: none;
+    }
+
+    .showmobile{
+      display: block !important;
+    }
+
+    .c_IconMobile{
+      margin: 0 !important;
+      margin-left: 0 !important;
+    }
+  } 
+
+  .c_tableoverflow{
+    overflow-y: scroll;
+    overflow-x: none;
+  }
+
+  .offline{
+    color: red!important;
+    }
+
+  .online{
+    color: green!important;
+   }
+  .btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  #image-gallery .modal-footer{
+    display: block;
+  }
+
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
